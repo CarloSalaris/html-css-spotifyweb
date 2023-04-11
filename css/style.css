@@ -29,9 +29,21 @@ button {
     cursor: pointer;
 }
 
+img {
+    max-height: 100%;
+}
+
 h2,
 h4 {
     color: #ffffff;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.icon svg path {
+    fill: #7d7f84;
 }
 
 
@@ -42,6 +54,11 @@ h4 {
  .wrapper {
     height: 100vh;
     width: 100vw;
+ }
+
+ .icon-text {
+    display: flex;
+    align-items: center;
  }
 
 
@@ -62,6 +79,11 @@ h4 {
         background-color: black;
     }
 
+        #logo {
+            width: 135px;
+            height: 75px;
+        }
+
         #side ul {
             margin-bottom: 15px;
         }
@@ -69,6 +91,15 @@ h4 {
             #side ul li {
                 margin: 10px 0;
             }
+
+        #menu .icon-text {
+            height: 40px;
+        }
+
+        #menu .icon-text .icon {
+            width: 30px;
+        }
+    
 
     main {
         width: calc(100% - 230px);
@@ -79,15 +110,15 @@ h4 {
         .to-action {
             height: 90px;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
             position: absolute;
             top: 0;
         }
 
             .to-action button {
                 position: absolute;
-                top: 15px;
-                right: 15px;
+                top: 20px;
+                right: 20px;
                 background-color: rgba(0, 0, 0, 0);
                 color: white;
                 font-size: inherit;
@@ -137,9 +168,6 @@ footer {
 /**********************************************
     DEBUG   
  *********************************************/
- #logo {
-    height: 90px;
- }
 
  main nav {
     border: solid 2px;
