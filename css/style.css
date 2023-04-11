@@ -13,6 +13,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
+    color: #7d7f84;
 }
 
  a {
@@ -26,6 +27,11 @@ ul {
 
 button {
     cursor: pointer;
+}
+
+h2,
+h4 {
+    color: #ffffff;
 }
 
 
@@ -53,6 +59,7 @@ button {
         height: 100%;
         width: 230px;
         padding: 15px;
+        background-color: black;
     }
 
         #side ul {
@@ -66,6 +73,7 @@ button {
     main {
         width: calc(100% - 230px);
         position: relative;
+        background-color: #141922;
     }
 
         .to-action {
@@ -82,6 +90,7 @@ button {
                 right: 15px;
                 background-color: rgba(0, 0, 0, 0);
                 color: white;
+                font-size: inherit;
                 height: 40px;
                 padding: 0 40px;
                 border: solid 2px white;
@@ -121,23 +130,15 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    background-color: #282828;
 }
 
 
 /**********************************************
     DEBUG   
  *********************************************/
-
- #side {
-    background-color: darkcyan;
- }
-
  #logo {
     height: 90px;
- }
-
- main {
-    background-color: aquamarine;
  }
 
  main nav {
@@ -151,12 +152,6 @@ footer {
  .cards-container {
     min-height: 245px;
     border: dotted 2px;
- }
-
- 
- 
- footer {
-    background-color: darkolivegreen;
  }
 
  footer div {
