@@ -1,0 +1,165 @@
+
+
+/**********************************************
+    GENERAL RULES   
+ *********************************************/
+ 
+ * {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+}
+
+ a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/**********************************************
+    UTILITIES   
+ *********************************************/
+
+ .wrapper {
+    height: 100vh;
+    width: 100vw;
+ }
+
+
+/**********************************************
+    SECTIONS   
+ *********************************************/
+
+/* UPPER PART */
+#upper {
+    display: flex;
+    height: calc(100% - 90px);
+}
+
+    #side {
+        height: 100%;
+        width: 230px;
+        padding: 15px;
+    }
+
+        #side ul {
+            margin-bottom: 15px;
+        }
+
+            #side ul li {
+                margin: 10px 0;
+            }
+
+    main {
+        width: calc(100% - 230px);
+        position: relative;
+    }
+
+        .to-action {
+            height: 90px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+        }
+
+            .to-action button {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                background-color: rgba(0, 0, 0, 0);
+                color: white;
+                height: 40px;
+                padding: 0 40px;
+                border: solid 2px white;
+                border-radius: 20px;
+            }
+
+        main .container {
+            padding: 20px;
+            overflow: auto;
+            max-height: 100%;
+        }
+
+        main nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 90px;
+
+            
+        }
+
+        main nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 630px;
+        }
+
+            main nav ul li {
+                margin: 0 10px 40px;
+            }
+
+        
+
+/* PLAYER */
+footer {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+/**********************************************
+    DEBUG   
+ *********************************************/
+
+ #side {
+    background-color: darkcyan;
+ }
+
+ #logo {
+    height: 90px;
+ }
+
+ main {
+    background-color: aquamarine;
+ }
+
+ main nav {
+    border: solid 2px;
+ }
+
+ main nav ul {
+    border: dotted 2px;
+ }
+
+ .cards-container {
+    min-height: 245px;
+    border: dotted 2px;
+ }
+
+ 
+ 
+ footer {
+    background-color: darkolivegreen;
+ }
+
+ footer div {
+    min-width: 230px;
+    border: solid 2px;
+ }
+
