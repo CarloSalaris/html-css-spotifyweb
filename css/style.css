@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     color: #7d7f84;
 }
 
@@ -34,17 +34,16 @@ hr {
 }
 
 i {
-    margin-left: 5px;
     margin-right: 10px;
 }
 
 img {
-    max-height: 100%;
+    /* max-height: 100%; */
     max-width: 100%;
 }
 
 h2,
-h4 {
+h3 {
     color: #ffffff;
     margin-bottom: 10px;
 }
@@ -73,6 +72,20 @@ h4 {
     align-items: center;
  }
 
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    gap: 15px;
+}
+
+.card {
+    max-width: 180px;
+    min-width: 140px;
+    text-align: center;
+    cursor: pointer;
+}
+
  .show-xs {
     display: none;
  }
@@ -87,6 +100,7 @@ h4 {
     height: calc(100% - 90px);
 }
 
+    /* SIDE LEFT */
     #side {
         max-height: 100%;
         width: 230px;
@@ -139,11 +153,15 @@ h4 {
         }
 
         #playlist ul {
-            height: 40%;
+            max-height: 40%;
             overflow: auto;
         }
 
         /* Sezione account */
+
+        #side-bottom {
+            flex-basis: 75px;
+        }
 
         #user h4 {
             margin: 0;
@@ -156,19 +174,22 @@ h4 {
             margin-right: 10px;
             border-radius: 50%;
         }
-        
+    
+    /* SIDE RIGHT - MAIN */
     main {
         width: calc(100% - 230px);
         position: relative;
         background-color: #141922;
     }
 
+        /* CALL-TO-ACTION */
         .to-action {
             height: 90px;
             width: 100%;
             background-color: rgba(0, 0, 0, 0.7);
             position: absolute;
             top: 0;
+            z-index: 900;
         }
 
             .to-action button {
@@ -190,24 +211,53 @@ h4 {
             max-height: 100%;
         }
 
+        /* menu nav centrale */
         main nav {
             display: flex;
             justify-content: center;
             margin-top: 90px;
-
-            
         }
 
         main nav ul {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            max-width: 630px;
+            max-width: 670px;
         }
 
             main nav ul li {
                 margin: 0 10px 40px;
             }
+
+        /* Sezione cards */
+        .cover-img {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        
+        .hover-cover {
+            position: absolute;
+            background-color: #00000085;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 4em;
+            cursor: pointer;
+            display: none;
+        }
+
+        .card:hover .hover-cover {
+            display: flex;
+        }
+
+        .cover-img.circle img {
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
 
 /**********************************************
@@ -284,11 +334,6 @@ footer {
  }
 
  main nav ul {
-    border: dotted 2px;
- }
-
- .cards-container {
-    min-height: 245px;
     border: dotted 2px;
  }
 
