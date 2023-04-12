@@ -44,7 +44,8 @@ img {
 h2,
 h3,
 h4,
-h5 {
+h5,
+.white {
     color: #ffffff;
 }
 
@@ -95,6 +96,16 @@ h4 {
 
  .show-xs {
     display: none;
+ }
+
+ .bar-style {
+    height: 5px;
+    border-radius: 10px;
+ }
+
+ .bar {
+    background-color: #606060;
+    width: 300px;
  }
 
 /**********************************************
@@ -329,11 +340,15 @@ footer {
 }
 
 footer .row {
+    align-items: center;
+    margin: 0;
+}
+
+footer .left.row {
     height: 100%;
     width: 220px;
     align-items: center;
     justify-content: space-between;
-    margin: 0;
 }
 
 footer .icon-text .icon {
@@ -343,6 +358,16 @@ footer .icon-text .icon {
 
 footer .icon-text span {
     font-size: .8em;
+}
+
+#player {
+    height: 100%;
+}
+
+footer #player .row {
+    justify-content: center;
+    height: 50%;
+    flex-wrap: nowrap;
 }
 
 
