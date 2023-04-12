@@ -40,6 +40,7 @@ i {
 
 img {
     max-height: 100%;
+    max-width: 100%;
 }
 
 h2,
@@ -47,6 +48,7 @@ h4 {
     color: #ffffff;
     margin-bottom: 10px;
 }
+
 
 .icon {
     margin-right: 5px;
@@ -71,6 +73,9 @@ h4 {
     align-items: center;
  }
 
+ .show-xs {
+    display: none;
+ }
 
 /**********************************************
     SECTIONS   
@@ -107,7 +112,9 @@ h4 {
 
         #logo {
             width: 135px;
-            height: 70px;
+            max-height: 70px;
+            max-width: 100%;
+            margin-bottom: 20px;
         }
 
         /* Sezione Menu */
@@ -118,7 +125,7 @@ h4 {
         }
 
         #menu .icon-text .icon {
-            width: 25px;
+            width: 28px;
         }
 
         /* Sezione Playlist */
@@ -149,7 +156,6 @@ h4 {
             margin-right: 10px;
             border-radius: 50%;
         }
-
         
     main {
         width: calc(100% - 230px);
@@ -203,6 +209,54 @@ h4 {
                 margin: 0 10px 40px;
             }
 
+
+/**********************************************
+    RESPONSIVE - UPPER
+ *********************************************/
+
+/* FORMATO MOBILE XS (max 552px) */
+
+@media all and (max-width: 552px) {
+    
+    /* side */
+
+    .hide-xs {
+        display: none;
+    }
+
+    .show-xs {
+        display: inline-block;
+    }
+
+    #side {
+        width: 50px;
+        padding: 10px;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        margin: 0;
+        width: 100%;
+    }
+
+    .centered {
+        margin: 0 auto;
+     }    
+
+    #user-icon {
+        margin: 30px auto 0;
+    }
+
+    /* main */
+
+    main {
+        width: calc(100% - 50px);
+    }
+}
+
         
 
 /* PLAYER */
@@ -213,6 +267,12 @@ footer {
     padding: 10px;
     background-color: #282828;
 }
+
+
+/**********************************************
+    RESPONSIVE - PLAYER
+ *********************************************/
+
 
 
 /**********************************************
