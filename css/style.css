@@ -93,6 +93,21 @@ h4 {
     max-height: 100%;
 }
 
+main .container nav li {
+    position: relative;
+}
+
+main .container nav li.selected::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #adff2f;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    translate: -50% 0;
+}
+
  .row {
     display: flex;
     /* flex-wrap: wrap; */
