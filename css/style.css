@@ -137,7 +137,7 @@ h4 {
  /* Selected element in Side Menu */
  .menu-selected {
     color: #ffffff;
-    border-left: solid 2px #adff2f;
+    border-left: solid 3px #adff2f;
  }
 
  .menu-selected svg path {
@@ -205,7 +205,7 @@ h4 {
         }
 
         #menu .icon-text {
-            height: 40px;
+            height: 35px;
             margin: 0;
         }
 
