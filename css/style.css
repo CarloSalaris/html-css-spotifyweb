@@ -35,6 +35,7 @@ hr {
 
 i {
     margin-right: 10px;
+    cursor: pointer;
 }
 
 img {
@@ -485,9 +486,13 @@ footer #player .row {
  *********************************************/
 
  .fa-circle-play:hover {
-    font-size: 1.3em;
+    transform: scale(1.2);
  }
 
+ main .to-action button:hover {
+    transform: scale(1.1);
+
+ }
 /**********************************************
     DEBUG   
  *********************************************/
