@@ -31,6 +31,7 @@ li {
 
 button {
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 hr {
@@ -110,6 +111,11 @@ h4 {
     display: none;
  }
 
+ .fa-circle-play {
+    transition: all .2s ease-in-out;
+ }
+
+ /* Progress bar */
  .bar-style {
     height: 5px;
     border-radius: 10px;
