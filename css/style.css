@@ -25,6 +25,10 @@ ul {
     list-style-type: none;
 }
 
+li {
+    cursor: pointer;
+}
+
 button {
     cursor: pointer;
 }
@@ -175,7 +179,7 @@ h4 {
         /* Sezione Logo */
 
         #logo {
-            width: 135px;
+            width: 175px;
             max-height: 70px;
             max-width: 100%;
             margin-bottom: 20px;
