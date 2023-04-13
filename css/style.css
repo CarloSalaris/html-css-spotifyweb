@@ -121,9 +121,18 @@ h4 {
  }
 
  .progress-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     background-color: #c1c1c1;
     width: 20%;
  }
+
+ .progress-bar .fa-circle {
+    margin: 0;
+    display: none;
+ }
+
 
  /* Selected element in Side Menu */
  .menu-selected {
@@ -495,7 +504,14 @@ footer #player .row {
 
  main .to-action button:hover {
     transform: scale(1.1);
+ }
 
+ .bar:hover .progress-bar {
+    background-color: #ffffff;
+ }
+
+ .bar:hover .fa-circle {
+    display: inline-block;
  }
 /**********************************************
     DEBUG   
