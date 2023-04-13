@@ -82,6 +82,7 @@ h4 {
  .icon-text {
     display: flex;
     align-items: center;
+    cursor: pointer;
  }
 
  main .container {
@@ -502,6 +503,10 @@ footer #player .row {
     transform: scale(1.2);
  }
 
+ #side .icon-text:hover {
+    color: #ffffff;
+ }
+
  main .to-action button:hover {
     transform: scale(1.1);
  }
@@ -516,6 +521,10 @@ footer #player .row {
 
  li:hover {
     color: #ffffff;
+ }
+
+ li:hover svg path {
+    fill: #ffffff;
  }
 /**********************************************
     DEBUG   
