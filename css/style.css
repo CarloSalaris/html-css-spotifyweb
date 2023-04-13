@@ -87,17 +87,15 @@ h4 {
 }
 
  .row {
-    /* height: fit-content; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
     margin: 30px 0;
     gap: 15px;
 }
 
 .card {
-    max-width: 180px;
-    min-width: 140px;
+    max-width: calc((100% - 40px) /6);
     text-align: center;
     cursor: pointer;
 }
@@ -260,6 +258,7 @@ h4 {
 
         /* Sezione cards */
         .cover-img {
+            max-width: 100%;
             position: relative;
             margin-bottom: 15px;
         }
@@ -279,6 +278,10 @@ h4 {
             display: none;
         }
 
+        .hover-cover .fa-circle-play {
+            margin: 0;
+        }
+
         .card:hover .hover-cover {
             display: flex;
         }
@@ -296,6 +299,29 @@ h4 {
 /**********************************************
     RESPONSIVE - UPPER
  *********************************************/
+
+/* FORMATO TABLET M (max 878px) */
+
+@media all and (max-width: 878px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: 140px;
+    }
+
+}
+
+/* FORMATO MOBILE S (max 639px) */
+
+@media all and (max-width: 639px) {
+
+    .card {
+        max-width: 170px;
+    }
+}
+
 
 /* FORMATO MOBILE XS (max 552px) */
 
@@ -338,7 +364,16 @@ h4 {
     main {
         width: calc(100% - 50px);
     }
+
+    main .row {
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 215px;
+    }
 }
+
 
         
 
