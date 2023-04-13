@@ -122,6 +122,7 @@ h4 {
     width: 20%;
  }
 
+
 /**********************************************
     SECTIONS   
  *********************************************/
@@ -151,7 +152,6 @@ h4 {
 
         #side ul {
             margin-bottom: 20px;
-            max-height: 100%;
         }
 
             #side ul li {
@@ -179,11 +179,12 @@ h4 {
         }
 
         /* Sezione Playlist */
-
         #playlist {
+            display: flex;
+            flex-direction: column;
             max-height: 100%;
         }
-        
+
         #playlist i {
             font-size: 40px;
         }
@@ -193,7 +194,6 @@ h4 {
         }
 
         #playlist ul {
-            height: 100%;
             overflow: auto;
         }
 
@@ -405,10 +405,12 @@ footer #player .row {
 }
 
 /**********************************************
-    RESPONSIVE - PLAYER
+    GENERAL HOVER
  *********************************************/
 
-
+ .fa-circle-play:hover {
+    font-size: 1.3em;
+ }
 
 /**********************************************
     DEBUG   
