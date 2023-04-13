@@ -298,10 +298,10 @@ main .container nav li.selected::after {
                 background-color: rgba(0, 0, 0, 0);
                 color: white;
                 font-size: inherit;
-                height: 40px;
-                padding: 0 40px;
-                border: solid 2px white;
-                border-radius: 20px;
+                height: 45px;
+                padding: 0 45px;
+                border: solid 1px white;
+                border-radius: 23px;
             }
 
         /* menu nav centrale */
