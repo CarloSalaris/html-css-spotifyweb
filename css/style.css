@@ -179,12 +179,7 @@ h4 {
         }
 
         /* Sezione Playlist */
-        #playlist {
-            display: flex;
-            flex-direction: column;
-            max-height: 100%;
-        }
-
+        
         #playlist i {
             font-size: 40px;
         }
@@ -288,8 +283,12 @@ h4 {
             display: flex;
         }
 
-        .cover-img.circle img {
+        .circle img {
             object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .circle {
             border-radius: 50%;
         }
 
