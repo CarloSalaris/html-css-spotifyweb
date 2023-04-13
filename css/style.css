@@ -120,6 +120,17 @@ h4 {
     width: 20%;
  }
 
+ /* Selected element in Side Menu */
+ .menu-selected {
+    color: #ffffff;
+    border-left: solid 2px #adff2f;
+ }
+
+ .menu-selected svg path {
+    fill: #ffffff;
+
+ }
+
 
 /**********************************************
     SECTIONS   
@@ -135,7 +146,7 @@ h4 {
     #side {
         max-height: 100%;
         width: 230px;
-        padding: 20px 20px 10px;
+        padding: 20px 0 10px;
         background-color: black;
         overflow:hidden;
         display: flex;
@@ -146,6 +157,10 @@ h4 {
 
     #side-top {
         height: calc(100% - 75px);
+    }
+
+    #side-top >* {
+        padding: 0 20px;
     }
 
         #side ul {
@@ -166,6 +181,14 @@ h4 {
         }
 
         /* Sezione Menu */
+
+        #menu {
+            padding: 0;
+        }
+
+        #menu li {
+            padding: 0 20px;
+        }
 
         #menu .icon-text {
             height: 40px;
@@ -194,6 +217,8 @@ h4 {
 
         #side-bottom {
             flex-basis: 75px;
+            padding: 0 20px;
+
         }
 
         #user h4 {
