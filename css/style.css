@@ -364,7 +364,24 @@ h4 {
 
     #side {
         width: 50px;
-        padding: 10px;
+        /* padding: 10px; */
+    }
+
+    #side-top >* {
+        padding: 0 10px;
+    }
+
+    #menu {
+        padding: 0;
+    }
+
+    #menu li {
+        padding: 0 10px;
+        border: none;
+    }
+
+    #side-bottom {
+        padding: 0 10px;
     }
 
     #logo {
