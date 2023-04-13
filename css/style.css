@@ -113,11 +113,13 @@ h4 {
 
  .bar {
     background-color: #606060;
-    width: 300px;
+    width: 100%;
+    cursor: pointer;
  }
 
  .progress-bar {
     background-color: #c1c1c1;
+    width: 20%;
  }
 
 /**********************************************
@@ -372,6 +374,7 @@ footer .icon-text span {
     height: 100%;
     width: 40%;
     max-width: 400px;
+    font-size: 1.2em;
 }
 
 footer #player .row {
@@ -384,8 +387,16 @@ footer #player .row {
     font-size: 2em;
 }
 
-#player .progress-bar {
-    width: 20%;
+#volume .row {
+    flex-wrap: nowrap;
+}
+
+#player .row span {
+    font-size: .6em;
+}
+
+#volume i {
+    margin: 0;
 }
 
 /**********************************************
