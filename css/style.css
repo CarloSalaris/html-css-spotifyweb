@@ -513,6 +513,10 @@ footer #player .row {
  .bar:hover .fa-circle {
     display: inline-block;
  }
+
+ li:hover {
+    color: #ffffff;
+ }
 /**********************************************
     DEBUG   
  *********************************************/
