@@ -114,17 +114,15 @@ main .container nav li.selected::after {
 }
 
  .row {
-    display: flex;
-    /* flex-wrap: wrap; */
-    width: 100%;
     margin: 30px 0;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
 .card {
-    max-width: calc((100% - 40px) /6);
+    max-width: calc(100% /6);
     text-align: center;
     cursor: pointer;
+    padding: 0 5px;
 }
 
  .show-xs {
@@ -376,12 +374,12 @@ main .container nav li.selected::after {
 /* FORMATO TABLET M (max 878px) */
 
 @media all and (max-width: 878px) {
-    .row {
+    /* .row {
         flex-wrap: wrap;
-    }
+    } */
 
     .card {
-        max-width: 140px;
+        max-width: calc(100% /4);
     }
 
 }
@@ -391,7 +389,7 @@ main .container nav li.selected::after {
 @media all and (max-width: 639px) {
 
     .card {
-        max-width: 170px;
+        max-width: calc(100% /2);
     }
 }
 
@@ -456,13 +454,6 @@ main .container nav li.selected::after {
         width: calc(100% - 50px);
     }
 
-    main .row {
-        justify-content: center;
-    }
-
-    .card {
-        max-width: 215px;
-    }
 }
 
 
@@ -503,6 +494,7 @@ footer .icon-text span {
 #player {
     height: 100%;
     width: 40%;
+    margin: 0 15px;
     max-width: 400px;
     font-size: 1.2em;
 }
@@ -511,6 +503,12 @@ footer #player .row {
     justify-content: center;
     height: 50%;
     flex-wrap: nowrap;
+    min-width: 200px;
+}
+
+#player #controls.row {
+    width: 200px;
+    justify-content: space-between;
 }
 
 #player .fa-circle-play {
@@ -523,10 +521,11 @@ footer #player .row {
 
 #player .row span {
     font-size: .6em;
+    margin: 0 10px;
 }
 
 #volume i {
-    margin: 0;
+    margin: 0 10px;
 }
 
 /**********************************************
