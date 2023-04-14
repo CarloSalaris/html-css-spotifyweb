@@ -402,7 +402,8 @@ main .container nav li.selected::after {
     
     /* side */
 
-    .hide-xs {
+    .hide-xs,
+    #playlist.hide-xs {
         display: none;
     }
 
