@@ -185,7 +185,7 @@ main .container nav li.selected::after {
 
     /* SIDE LEFT */
     #side {
-        max-height: 100%;
+        /* max-height: 100%; */
         width: 230px;
         padding: 20px 0 10px;
         background-color: black;
@@ -197,7 +197,9 @@ main .container nav li.selected::after {
     }
 
     #side-top {
-        height: calc(100% - 75px);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
 
     #side-top >* {
@@ -241,6 +243,12 @@ main .container nav li.selected::after {
         }
 
         /* Sezione Playlist */
+
+        #playlist {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
         
         #playlist i {
             font-size: 40px;
@@ -257,7 +265,6 @@ main .container nav li.selected::after {
         /* Sezione account */
 
         #side-bottom {
-            flex-basis: 75px;
             padding: 0 20px;
 
         }
